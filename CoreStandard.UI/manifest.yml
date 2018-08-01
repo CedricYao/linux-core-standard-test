@@ -1,0 +1,10 @@
+---
+applications:
+- name: contosso-core 
+  memory: 1024m
+  stack: windows2016
+  buildpack: binary_buildpack
+  random-route: true
+  command: cmd /c SET ASPNETCORE_URLS=http://*:8080 && CoreStandard.UI.exe --server.urls http://0.0.0.0:8080
+  env:
+    APP_ENVIRONMENT: production

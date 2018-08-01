@@ -1,0 +1,9 @@
+---
+applications:
+- name: linux-CoreStandard
+  memory: 1024m
+  stack: cflinuxfs2
+  buildpack: dotnet_core_buildpack
+  random-route: true
+  env:
+    APP_ENVIRONMENT: production
